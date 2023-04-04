@@ -1,28 +1,28 @@
-import express, { NextFunction, Request, Response } from "express";
+import "./database/mongodb";
+import express from "express";
 import { router } from "./routes";
 import cors from "cors";
+import swaggerUi from "swagger-ui-express";
+import swaggerDocs from "./swagger.json";
+import ProductModel from "./models/products";
 
 const app = express();
 
 app.use(express.json());
 app.use(cors());
-
 app.use(router);
+app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
-app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-  if (err instanceof Error) {
-    return res.status(400).json({ error: err.message });
-  }
+const PORT = 5000;
 
-  return res
-    .status(500)
-    .json({ status: "error", message: "Internal Server Error" });
-});
+// ProductModel.create({
+//   name: "Product2",
+//   price: 30.55,
+//   description: "Product2 description",
+//   category: "produ",
+//   image: "image",
+// });
 
-app.get("/", (req, res) => {
-  return res.json({ ola: "test" });
-});
-
-app.listen(5000, () => {
-  console.log("server is running!");
+app.listen(PORT, () => {
+  console.log(`server is running in port ${PORT}!`);
 });

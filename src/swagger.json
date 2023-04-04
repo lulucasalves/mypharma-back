@@ -1,0 +1,68 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Minha API",
+    "version": "1.0.0",
+    "description": "Descrição da minha API"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5000"
+    }
+  ],
+  "paths": {
+    "/product": {
+      "get": {
+        "tags": ["Product"],
+        "summary": "List Products",
+        "operationId": "listProduct",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "query",
+            "description": "Filter products names",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "category",
+            "description": "Filter products by category",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "sort",
+            "description": "Sort products with credentials 'nameD, nameC, priceD, priceC'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of products"
+          }
+        }
+      }
+    },
+    "/category": {
+      "get": {
+        "tags": ["Category"],
+        "summary": "List Categories",
+        "operationId": "listCategory",
+        "responses": {
+          "200": {
+            "description": "List of categories"
+          }
+        }
+      }
+    }
+  }
+}

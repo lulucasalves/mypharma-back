@@ -7,10 +7,15 @@
     "start": "ts-node src/server.ts"
   },
   "dependencies": {
+    "@types/mongoose": "^5.11.97",
     "axios": "^0.24.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2",
     "ts-node": "^10.9.1",
     "uuid": "^8.3.2"
   },
