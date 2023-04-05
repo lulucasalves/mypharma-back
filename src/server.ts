@@ -16,13 +16,13 @@ app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 const PORT = 5000;
 
 // ProductModel.create({
-//   name: "Vitamina B12 Gotas",
-//   price: 44.9,
+//   name: "Lipikar Loção Hidratante",
+//   price: 122.91,
 //   description:
-//     "No formato Metilcobalamina - versão natural e ativa, auxilia no funcionamento do sistema imune e também na formação de células vermelhas do sangue.",
-//   category: "Vitaminas",
+//     "Maravilhoso hidratante corporal com efeito calmante. Sua fórmula contém manteiga de karité e glicerina para hidratar a pele e Alta concentração de Água Termal de La Roche-Posay.",
+//   category: "Cosméticos",
 //   image:
-//     "https://raw.githubusercontent.com/lulucasalves/mypharma-back/main/.github/b12.webp",
+//     "https://raw.githubusercontent.com/lulucasalves/mypharma-back/main/.github/lipikar.webp",
 // });
 
 app.listen(PORT, () => {
