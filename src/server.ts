@@ -16,12 +16,13 @@ app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 const PORT = 5000;
 
 // ProductModel.create({
-//   name: "Paracetamol 750mg",
-//   price: 6.45,
+//   name: "Vitamina B12 Gotas",
+//   price: 44.9,
 //   description:
-//     "Paracetamol reduz a febre atuando no centro regulador da temperatura no Sistema Nervoso Central (SNC) e diminui a sensibilidade para a dor.",
-//   category: "Medicamentos",
-//   image: "image",
+//     "No formato Metilcobalamina - versão natural e ativa, auxilia no funcionamento do sistema imune e também na formação de células vermelhas do sangue.",
+//   category: "Vitaminas",
+//   image:
+//     "https://raw.githubusercontent.com/lulucasalves/mypharma-back/main/.github/b12.webp",
 // });
 
 app.listen(PORT, () => {
