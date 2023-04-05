@@ -1,2 +1,2 @@
-export * from "./GetProductService";
-export * from "./GetCategoryService";
+export * from "./product";
+export * from "./category";

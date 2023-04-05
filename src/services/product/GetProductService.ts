@@ -1,7 +1,7 @@
 // import Products from "../models/products";
 
-import { IQueryProduct } from "../interfaces";
-import ProductModel from "../models/products";
+import { IQueryProduct } from "../../interfaces";
+import ProductModel from "../../models/products";
 
 class GetProductService {
   async execute(params: IQueryProduct) {

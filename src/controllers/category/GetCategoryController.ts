@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import { GetCategoryService } from "../services";
+import { GetCategoryService } from "../../services";
 
 class GetCategoryController {
   async handle(req: Request, res: Response) {

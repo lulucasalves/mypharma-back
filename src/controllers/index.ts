@@ -1,2 +1,2 @@
-export * from "./GetProductController";
-export * from "./GetCategoryController";
+export * from "./category";
+export * from "./product";
