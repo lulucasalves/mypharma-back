@@ -16,10 +16,11 @@ app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 const PORT = 5000;
 
 // ProductModel.create({
-//   name: "Product2",
-//   price: 30.55,
-//   description: "Product2 description",
-//   category: "produ",
+//   name: "Paracetamol 750mg",
+//   price: 6.45,
+//   description:
+//     "Paracetamol reduz a febre atuando no centro regulador da temperatura no Sistema Nervoso Central (SNC) e diminui a sensibilidade para a dor.",
+//   category: "Medicamentos",
 //   image: "image",
 // });
 
